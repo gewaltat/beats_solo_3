@@ -1,0 +1,20 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "templates.scss";
+
+
+.headline {
+  text-align: center
+}
+.headline__title {
+  @include text('Play',sans-serif,bold,48px,52px,$tc_b1);
+  text-transform: uppercase;
+  margin: 0px;
+  margin-bottom: 18px;
+}
+
+.headline__subtitle {
+  @include text('Play',sans-serif,normal,16px,18px,$tc_g);
+  padding: 0 24%;
+  margin-bottom: 62px;
+}

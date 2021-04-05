@@ -1,0 +1,48 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+%button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @include button(160px,54px,21px,41px);
+  border: 0px;
+  border-radius: 35px;
+  background-color: #E01F3D;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+  cursor: pointer;
+  background-color: #CA1B36;
+  // text-decoration: none;
+  // text-decoration: underline;
+  color: #fff;
+  }
+  &:active {
+  // background-color: #CA1B36;
+  box-shadow: 0 2px 4px 0 rgb(218, 1, 0, 0.3);
+  }
+}
+
+%text {
+  @include text('Play',sans-serif,normal,18px,30px,#000);
+}
+
+.button_transparent {
+  margin-left: 10px;
+  background-color: transparent;
+  color: $tc_w;
+  text-transform: none;
+  @include button(70px,19px,21px,41px);
+
+  &:hover {
+    margin-left: 10px;
+    background-color: transparent;
+    @include button(70px,19px,21px,41px);
+    text-transform: none;
+    color: #E01F3D;
+  }
+}

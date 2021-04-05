@@ -1,0 +1,65 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "templates.scss";
+
+.logotype {
+  width: 40px;
+  height: 40px;
+  margin-right: 38px;
+}
+
+// .logo {
+//   width: 40px;
+//   height: 40px;
+// }
+
+.head__row {
+  display: flex;
+  align-items: center;
+  background-color: $bc_g;
+  padding-top: 24px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  display: inline-flex;
+}
+
+.menu__item > a {
+  text-decoration: none;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  // margin-right: 27px;
+  color: #292929;
+}
+
+.menu__item {
+  margin-right: 27px;
+}
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu__contacts {
+  display: inline-flex;
+}
+
+.menu__contacts > object {
+  margin-left: 46px;
+}
+
+.number {
+  text-decoration: none;
+  @include text('Play',sans-serif,normal,18px,21px,$tc_b1);
+  margin-left: 8px;
+}
+
+.button {
+  @extend %button;
+}

@@ -1,0 +1,48 @@
+.button_transparent {
+  margin-left: 10px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: none;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+}
+.button_transparent:hover {
+  margin-left: 10px;
+  background-color: transparent;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+  text-transform: none;
+  color: #E01F3D;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+}
+
+.page_list {
+  margin-top: -345px;
+}
+
+.page__item {
+  border: 2px solid black;
+  cursor: pointer;
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+  margin-bottom: 12px;
+}
+
+.page__dot {
+  display: block;
+  margin: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #292929;
+  opacity: 60%;
+}

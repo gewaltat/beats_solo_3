@@ -1,0 +1,100 @@
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 54px;
+  padding: 21px, 41px;
+  border: 0px;
+  border-radius: 35px;
+  background-color: #E01F3D;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #CA1B36;
+  color: #fff;
+}
+.button:active {
+  box-shadow: 0 2px 4px 0 rgba(218, 1, 0, 0.3);
+}
+
+.button_transparent {
+  margin-left: 10px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: none;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+}
+.button_transparent:hover {
+  margin-left: 10px;
+  background-color: transparent;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+  text-transform: none;
+  color: #E01F3D;
+}
+
+.logotype {
+  width: 40px;
+  height: 40px;
+  margin-right: 38px;
+}
+
+.head__row {
+  display: flex;
+  align-items: center;
+  background-color: #F5F5F5;
+  padding-top: 24px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu__list {
+  display: inline-flex;
+}
+
+.menu__item > a {
+  text-decoration: none;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #292929;
+}
+
+.menu__item {
+  margin-right: 27px;
+}
+
+.menu__item:last-child {
+  margin-right: 0px;
+}
+
+.menu__contacts {
+  display: inline-flex;
+}
+
+.menu__contacts > object {
+  margin-left: 46px;
+}
+
+.number {
+  text-decoration: none;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #292929;
+  margin-left: 8px;
+}

@@ -1,0 +1,72 @@
+.button_transparent {
+  margin-left: 10px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: none;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+}
+.button_transparent:hover {
+  margin-left: 10px;
+  background-color: transparent;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+  text-transform: none;
+  color: #E01F3D;
+}
+
+.radio {
+  display: flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+          user-select: none;
+  margin-bottom: 19px;
+  margin-right: 18px;
+}
+.radio:last-child {
+  margin-right: 0px;
+}
+.radio__checkbox .radio__visible {
+  border-radius: 4px;
+}
+.radio__checkbox .radio__visible:before {
+  background: url("/svg/mark.svg") center center no-repeat;
+}
+
+.radio__title {
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
+.radio__elem {
+  display: none;
+}
+.radio__elem:checked ~ .radio__visible::before {
+  display: block;
+}
+
+.radio__visible {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: relative;
+  background: #fff;
+  margin-right: 10px;
+}
+.radio__visible:before {
+  content: "";
+  width: 13px;
+  height: 13px;
+  background: #E01F3D;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

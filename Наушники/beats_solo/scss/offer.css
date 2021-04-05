@@ -1,0 +1,78 @@
+.button_transparent {
+  margin-left: 10px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: none;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+}
+.button_transparent:hover {
+  margin-left: 10px;
+  background-color: transparent;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+  text-transform: none;
+  color: #E01F3D;
+}
+
+.offer__row {
+  display: flex;
+  flex-direction: column;
+  margin-top: 97px;
+}
+
+.title {
+  display: flex;
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 52px;
+  color: #292929;
+  text-transform: uppercase;
+  max-width: 400px;
+  max-height: 156px;
+  margin: 0px;
+  margin-bottom: 22px;
+}
+
+.offer__text {
+  display: flex;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 25px;
+  color: #292929;
+  max-width: 322px;
+  max-height: 50px;
+  margin-bottom: 36px;
+}
+
+.photo {
+  display: flex;
+  justify-content: flex-end;
+  width: 920px;
+}
+.photo object {
+  min-width: 489px;
+  min-height: 489px;
+  margin-top: -360px;
+}
+
+.description__row {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.description__list {
+  display: flex;
+  margin-top: -60px;
+}
+
+.description__item {
+  margin-right: 2px;
+}
+.description__item:last-child {
+  margin-right: 0px;
+}
