@@ -1,0 +1,58 @@
+.button_transparent {
+  margin-left: 10px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: none;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+}
+.button_transparent:hover {
+  margin-left: 10px;
+  background-color: transparent;
+  width: 70px;
+  height: 19px;
+  padding: 21px, 41px;
+  text-transform: none;
+  color: #E01F3D;
+}
+
+.back {
+  background-color: #F5F5F5;
+}
+
+.back_one {
+  background-color: #fff;
+}
+
+.back_two {
+  background-color: #fff;
+}
+
+.back_three {
+  background: url("../svg/background_black.png") bottom center no-repeat;
+  background-size: cover;
+}
+
+.back__four {
+  background: url("../svg/map.svg") top center no-repeat;
+  background-size: 100%;
+}
+
+.hero {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero__adva {
+  position: relative;
+  background: url("../svg/Rectangle.svg") bottom -2% right 25% no-repeat;
+}
+
+.section__adva {
+  position: relative;
+  background: url("../svg/Rectangle.svg") top -2% right 25% no-repeat;
+}

@@ -27,7 +27,7 @@
   position: relative;
 }
 .advantages__item::before {
-  content: url("svg/shape.svg");
+  content: url("../svg/shape.svg");
   position: absolute;
   top: 56px;
   right: 0;

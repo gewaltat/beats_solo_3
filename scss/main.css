@@ -425,12 +425,12 @@ li {
 }
 
 .back_three {
-  background: url("svg/background_black.png") bottom center no-repeat;
+  background: url("../svg/background_black.png") bottom center no-repeat;
   background-size: cover;
 }
 
 .back__four {
-  background: url("svg/map1.png") top center no-repeat;
+  background: url("../svg/map.svg") top center no-repeat;
   background-size: 100%;
 }
 
@@ -444,12 +444,12 @@ li {
 
 .hero__adva {
   position: relative;
-  background: url("svg/Rectangle.svg") bottom -2% right 25% no-repeat;
+  background: url("../svg/Rectangle.svg") bottom -2% right 25% no-repeat;
 }
 
 .section__adva {
   position: relative;
-  background: url("svg/Rectangle.svg") top -2% right 25% no-repeat;
+  background: url("../svg/Rectangle.svg") top -2% right 25% no-repeat;
 }
 
 .button {
@@ -842,7 +842,7 @@ li {
   position: relative;
 }
 .advantages__item::before {
-  content: url("svg/shape.svg");
+  content: url("../svg/shape.svg");
   position: absolute;
   top: 56px;
   right: 0;
@@ -1332,7 +1332,7 @@ li {
   border-radius: 4px;
 }
 .radio__checkbox .radio__visible:before {
-  background: url("svg/mark.svg") center center no-repeat;
+  background: url("../svg/mark.svg") center center no-repeat;
 }
 
 .radio__title {
