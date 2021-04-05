@@ -32,7 +32,7 @@
   border-radius: 4px;
 }
 .radio__checkbox .radio__visible:before {
-  background: url("/svg/mark.svg") center center no-repeat;
+  background: url("svg/mark.svg") center center no-repeat;
 }
 
 .radio__title {
