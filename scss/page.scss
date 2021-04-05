@@ -1,0 +1,60 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "templates.scss";
+
+
+.page {
+  position: fixed;
+  top: 45%;
+    right: 12%;
+  display: flex;
+  flex-direction: column;
+}
+
+// .page_list {
+//   // margin-top: -345px;
+// }
+.page__item {
+  // border: 2px solid black;
+  // cursor: pointer;
+  // margin-left: auto;
+  // width: 16px;
+  // height: 16px;
+  // border-radius: 50%;
+  // background-color: $bc_g;
+  margin-bottom: 5px;
+
+  &_active {
+    .page__dot {
+      border-color: #E01F3D;
+      &:before {
+        background-color: #E01F3D;
+      }
+    }
+  }
+}
+
+.page__dot {
+  display: block;
+  position: relative;
+  // margin: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background-color: transparent;
+  // opacity: 60%;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $tc_b1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
