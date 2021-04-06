@@ -16,6 +16,10 @@
   text-transform: none;
   color: #E01F3D;
 }
+.button_transparent:active {
+  box-shadow: none;
+  outline: none;
+}
 
 .comment__title {
   font-family: "Play", sans-serif;

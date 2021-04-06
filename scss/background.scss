@@ -26,19 +26,19 @@
 }
 
 .hero {
-  height: 100vh;
+  height: 50vh;
   min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.hero__adva {
-  position: relative;
-  background: url("../svg/Rectangle.svg") bottom -2% right 25% no-repeat;
-}
+// .hero__adva {
+//   position: relative;
+//   background: url("../svg/Rectangle.svg") bottom -2% right 25% no-repeat;
+// }
 
-.section__adva {
-  position: relative;
-  background: url("../svg/Rectangle.svg") top -2% right 25% no-repeat;
-}
+// .section__adva {
+//   position: relative;
+//   background: url("../svg/Rectangle.svg") top -2% right 25% no-repeat;
+// }

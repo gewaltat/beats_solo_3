@@ -45,4 +45,9 @@
     text-transform: none;
     color: #E01F3D;
   }
+
+  &:active {
+    box-shadow: none;
+    outline: none;
+  }
 }

@@ -16,9 +16,13 @@
   text-transform: none;
   color: #E01F3D;
 }
+.button_transparent:active {
+  box-shadow: none;
+  outline: none;
+}
 
 .section {
-  height: 100vh;
+  height: 50vh;
   min-height: 650px;
   display: flex;
   flex-direction: column;
