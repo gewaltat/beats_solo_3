@@ -213,7 +213,7 @@ button:-moz-focusring,
 [type=button]:-moz-focusring,
 [type=reset]:-moz-focusring,
 [type=submit]:-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: rem(1px) dotted ButtonText;
 }
 
 /**
@@ -285,7 +285,7 @@ textarea {
 [type=search] {
   -webkit-appearance: textfield;
   /* 1 */
-  outline-offset: -2px;
+  outline-offset: rem(-2px);
   /* 2 */
 }
 
@@ -339,11 +339,54 @@ template {
   display: none;
 }
 
+.button_transparent {
+  margin-left: rem(10px);
+  background-color: transparent;
+  color: #fff;
+  text-transform: none;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
+}
+.button_transparent:hover {
+  margin-left: rem(10px);
+  background-color: transparent;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
+  text-transform: none;
+  color: #E01F3D;
+}
+.button_transparent:active {
+  box-shadow: none;
+  outline: none;
+}
+
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
 .body {
   /* font-family: 'Alegreya Sans', sans-serif; */
   font-family: "Play", sans-serif;
   font-weight: normal;
-  font-size: 16px;
 }
 
 ul,
@@ -353,13 +396,17 @@ li {
   list-style-type: none;
 }
 
+* a {
+  white-space: nowrap;
+}
+
 * {
   box-sizing: border-box;
 }
 
 .container {
-  width: 100%;
-  max-width: 1100px;
+  width: 95%;
+  max-width: 980px;
   margin: 0 auto;
   position: relative;
 }

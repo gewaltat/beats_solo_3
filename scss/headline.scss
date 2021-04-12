@@ -7,14 +7,18 @@
   text-align: center
 }
 .headline__title {
-  @include text('Play',sans-serif,bold,48px,52px,$tc_b1);
+  @include text('Play',sans-serif,bold,rem(48px),rem(52px),$tc_b1);
   text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 18px;
+  margin: rem(0px);
+  margin-bottom: rem(18px);
 }
 
 .headline__subtitle {
-  @include text('Play',sans-serif,normal,16px,18px,$tc_g);
-  padding: 0 24%;
-  margin-bottom: 62px;
+  @include text('Play',sans-serif,normal,rem(16px),rem(18px),$tc_g);
+  padding: 0 13%;
+  margin-bottom: rem(62px);
+
+  @include phones {
+    padding: 0 4%;
+  }
 }

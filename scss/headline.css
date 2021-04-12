@@ -1,18 +1,18 @@
 .button_transparent {
-  margin-left: 10px;
+  margin-left: rem(10px);
   background-color: transparent;
   color: #fff;
   text-transform: none;
-  width: 70px;
-  height: 19px;
-  padding: 21px, 41px;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
 }
 .button_transparent:hover {
-  margin-left: 10px;
+  margin-left: rem(10px);
   background-color: transparent;
-  width: 70px;
-  height: 19px;
-  padding: 21px, 41px;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
   text-transform: none;
   color: #E01F3D;
 }
@@ -28,20 +28,25 @@
 .headline__title {
   font-family: "Play", sans-serif;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 52px;
+  font-size: rem(48px);
+  line-height: rem(52px);
   color: #292929;
   text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 18px;
+  margin: rem(0px);
+  margin-bottom: rem(18px);
 }
 
 .headline__subtitle {
   font-family: "Play", sans-serif;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: rem(16px);
+  line-height: rem(18px);
   color: #666666;
-  padding: 0 24%;
-  margin-bottom: 62px;
+  padding: 0 13%;
+  margin-bottom: rem(62px);
+}
+@media screen and (max-width: 480px) {
+  .headline__subtitle {
+    padding: 0 4%;
+  }
 }

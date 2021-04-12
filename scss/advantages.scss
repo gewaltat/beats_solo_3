@@ -4,6 +4,10 @@
 
 .advantages {
   display: flex;
+
+  @include phones {
+    flex-direction: column;
+  }
 }
 
 .advantages__item {
@@ -11,12 +15,21 @@
   padding: 0 5%;
   position: relative;
 
+  @include phones {
+    padding: 0;
+    margin-bottom: rem(31px);
+  }
+
   &::before {
     content: url("../svg/shape.svg");
     position: absolute;
-    top: 56px;
+    top: rem(56px);
     right: 0;
     transform: translateX(50%);
+
+    @include tablets{
+      display:none;
+    }
   }
 
   &:first-child {

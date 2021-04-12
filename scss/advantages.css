@@ -1,18 +1,18 @@
 .button_transparent {
-  margin-left: 10px;
+  margin-left: rem(10px);
   background-color: transparent;
   color: #fff;
   text-transform: none;
-  width: 70px;
-  height: 19px;
-  padding: 21px, 41px;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
 }
 .button_transparent:hover {
-  margin-left: 10px;
+  margin-left: rem(10px);
   background-color: transparent;
-  width: 70px;
-  height: 19px;
-  padding: 21px, 41px;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
   text-transform: none;
   color: #E01F3D;
 }
@@ -24,18 +24,34 @@
 .advantages {
   display: flex;
 }
+@media screen and (max-width: 480px) {
+  .advantages {
+    flex-direction: column;
+  }
+}
 
 .advantages__item {
   flex: 1;
   padding: 0 5%;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .advantages__item {
+    padding: 0;
+    margin-bottom: rem(31px);
+  }
+}
 .advantages__item::before {
   content: url("../svg/shape.svg");
   position: absolute;
-  top: 56px;
+  top: rem(56px);
   right: 0;
   transform: translateX(50%);
+}
+@media screen and (max-width: 768px) {
+  .advantages__item::before {
+    display: none;
+  }
 }
 .advantages__item:first-child {
   padding-left: 0;

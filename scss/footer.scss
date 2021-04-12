@@ -3,17 +3,25 @@
 @import "templates.scss";
 
 .footer { 
-margin-top: 20px;
+margin-top: rem(20px);
 }
 .footer__row {
   display: flex;
   flex-direction: column;
+
+  @include phones {
+    align-items: center;
+  }
 }
 
 .adress {
   display: flex;
   flex: 1;
-  @include text('Play',sans-serif,normal,18px,24px,$tc_b1);
+  @include text('Play',sans-serif,normal,rem(18px),rem(24px),$tc_b1);
+  
+  @include phones {
+    margin-bottom: rem(12px);
+  }
 }
 
 .menu__contacts_footer > object {
@@ -21,15 +29,26 @@ margin-top: 20px;
   align-self: center;
   justify-content: center;
   margin-left: 0;
-  width: 12px;
-  height: 12px;
+  width: rem(12px);
+  height: rem(12px);
+
+  @include phones {
+    margin-bottom: rem(12px);
+  }
 }
 
 .social {
   display: flex;
-  margin-top: -40px;
+  margin-top: rem(-40px);
   justify-content: flex-end;
-  padding-bottom: 40px;
+  padding-bottom: rem(40px);
+
+  @include phones {
+    margin-top: rem(19px);
+    justify-content: normal;
+    padding-bottom: 0;
+    margin-bottom: rem(30px);
+  }
 }
 
 .social__item {
@@ -37,7 +56,7 @@ margin-top: 20px;
 }
 
 .footer__network {
-  margin-right: 10px;
+  margin-right: rem(10px);
 
   &:last-child {
     margin-right: 0;

@@ -21,13 +21,14 @@
 
 .back__four {
   background: url("../svg/map.svg") top center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   // height: 100%;
 }
 
 .hero {
-  height: 50vh;
-  min-height: 650px;
+  // background: url(../svg/headphones.svg) bottom right no-repeat;
+  height: 70vh;
+  min-height: rem(650px);
   display: flex;
   flex-direction: column;
   justify-content: center;

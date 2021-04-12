@@ -1,18 +1,18 @@
 .button_transparent {
-  margin-left: 10px;
+  margin-left: rem(10px);
   background-color: transparent;
   color: #fff;
   text-transform: none;
-  width: 70px;
-  height: 19px;
-  padding: 21px, 41px;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
 }
 .button_transparent:hover {
-  margin-left: 10px;
+  margin-left: rem(10px);
   background-color: transparent;
-  width: 70px;
-  height: 19px;
-  padding: 21px, 41px;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
   text-transform: none;
   color: #E01F3D;
 }
@@ -24,67 +24,123 @@
 .comment__title {
   font-family: "Play", sans-serif;
   font-weight: bold;
-  font-size: 48px;
-  line-height: 52px;
+  font-size: rem(48px);
+  line-height: rem(52px);
   color: #fff;
   margin: 0;
-  margin-bottom: 55px;
+  margin-bottom: rem(55px);
+}
+@media screen and (max-width: 768px) {
+  .comment__title {
+    margin-bottom: rem(30px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .comment__title {
+    font-family: "Play", sans-serif;
+    font-weight: bold;
+    font-size: rem(32px);
+    line-height: rem(36px);
+    color: #fff;
+    margin-bottom: rem(40px);
+  }
 }
 
 .form {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    padding: 0 17%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
+}
 
 .form__col {
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
 }
 .form__col:last-child {
-  margin-right: 0px;
+  margin-right: rem(0px);
+}
+@media screen and (max-width: 768px) {
+  .form__col {
+    margin-right: 0;
+  }
 }
 
 .form__row {
   display: flex;
-  margin-bottom: 6px;
+  margin-bottom: rem(6px);
+}
+@media screen and (max-width: 768px) {
+  .form__row {
+    margin-bottom: rem(10px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__row {
+    margin-bottom: rem(20px);
+  }
 }
 
 .form__row_space {
-  margin-bottom: 16px;
+  margin-bottom: rem(16px);
 }
 
 .form__title {
   font-family: "Play", sans-serif;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: rem(16px);
+  line-height: rem(19px);
   color: #fff;
-  margin-bottom: 6px;
+  margin-bottom: rem(6px);
 }
 
 .form__block {
   flex: 1;
-  margin-right: 16px;
+  margin-right: rem(16px);
 }
 .form__block:last-child {
-  margin-right: 0px;
+  margin-right: rem(0px);
 }
 
 .form__input {
   width: 100%;
   font-family: "Play", sans-serif;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: rem(14px);
+  line-height: rem(20px);
   color: #000;
   border: none;
-  padding: 18px 12px;
-  border: solid 3px transparent;
-  border-radius: 4px;
+  padding: rem(18px) rem(12px);
+  border: solid rem(3px) transparent;
+  border-radius: rem(4px);
+}
+@media screen and (max-width: 768px) {
+  .form__input {
+    padding: rem(10px) rem(8px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__input {
+    padding: rem(10px) rem(8px);
+  }
 }
 .form__input__textarea {
-  height: 152px;
+  height: rem(152px);
   resize: none;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
+}
+@media screen and (max-width: 768px) {
+  .form__input__textarea {
+    height: rem(82px);
+  }
 }
 .form__input:focus {
   border-color: #E01F3D;
@@ -94,9 +150,26 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 7px;
+  margin-left: rem(7px);
+}
+@media screen and (max-width: 768px) {
+  .form__controls {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form__controls {
+    justify-content: center;
+  }
 }
 
 .form__buttons {
-  margin-top: 30px;
+  margin-top: rem(30px);
+}
+@media screen and (max-width: 768px) {
+  .form__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
