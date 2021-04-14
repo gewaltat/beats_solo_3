@@ -559,11 +559,22 @@ li {
 }
 
 .hero {
-  height: 70vh;
+  height: 100vh;
   min-height: 40.625rem;
+  max-height: 45rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 59.375rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    min-height: 50rem;
+  }
 }
 
 .button {
@@ -877,11 +888,6 @@ li {
   margin-right: 0rem;
 }
 
-.what__img {
-  width: 2rem;
-  height: 3.75rem;
-}
-
 .button {
   display: inline-flex;
   justify-content: center;
@@ -1009,11 +1015,18 @@ li {
 }
 
 .section {
-  height: 70vh;
-  min-height: 40.625rem;
+  height: 100vh;
+  min-height: 43.75rem;
+  max-height: 45rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .section {
+    min-height: 48.75rem;
+    max-height: 50rem;
+  }
 }
 
 .section__title {
@@ -1096,9 +1109,13 @@ li {
   flex: 1;
   padding: 0 5%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (max-width: 480px) {
   .advantages__item {
+    flex-direction: row;
     padding: 0;
     margin-bottom: 1.9375rem;
   }
@@ -1193,6 +1210,9 @@ li {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 480px) {
   .advantage__img_wrapper {
@@ -1208,6 +1228,11 @@ li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.what__img {
+  width: 4.25rem;
+  height: 4.25rem;
 }
 
 .advantage__title {

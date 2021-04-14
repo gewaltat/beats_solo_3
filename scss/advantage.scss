@@ -21,6 +21,13 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: rem(24px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // @include tablets {
+  //   margin-right: 0;
+  // }
 
   @include phones {
     margin-bottom: rem(0px);
@@ -35,7 +42,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+}
+
+.what__img {
+  width: rem(68px);
+  height: rem(68px);
 }
 
 .advantage__title {

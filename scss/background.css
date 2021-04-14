@@ -44,9 +44,20 @@
 }
 
 .hero {
-  height: 70vh;
+  height: 100vh;
   min-height: rem(650px);
+  max-height: rem(720px);
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: rem(950px);
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    min-height: rem(800px);
+  }
 }
