@@ -1,0 +1,35 @@
+.fullscreen__menu {
+  position: fixed;
+  display: flex;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  flex-direction: column;
+  background: #333537;
+  z-index: 1000;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  visibility:hidden;
+}
+
+.fullscreen__menu__close {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.fs__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include text('Play',sans-serif,normal,rem(36px),rem(72px),#fff);
+}
+
+.fs__item {
+padding: 20px 100px;
+}

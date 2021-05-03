@@ -29,6 +29,11 @@
   background-color: #fff;
 }
 
+.back_sw {
+  position: relative;
+  background-color: #F5F5F5;
+}
+
 .back_two {
   background-color: #fff;
 }
