@@ -5,73 +5,145 @@
 
 .reviews__display {
   background-color: #F8FAF9;
-  padding: 42px 19% 42px 42px;
+  padding: rem(42px) 19% rem(42px) rem(42px);
   position: relative;
   overflow: hidden;
+
+  @include tablets {
+    padding: rem(42px) rem(42px) rem(42px) rem(42px);
+  }
 
   &::before {
     content: "";
     display: block;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     border-radius: 50%;
     background: $bc_w;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top: -65px;
+    top: rem(-65px);
   }
 }
 
 .reviews__display_inner {
   display: flex;
+
+  @include tablets {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
-.reviews__avatar {
-  width: 253px;
-  height: 264px;
-}
+// .reviews__avatar {
+//   width: rem(253px);
+//   height: rem(264px);
+// }
 
 .reviews__avatar_img {
+  width: rem(253px);
+  height: rem(264px);
   object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
+
+  @include tablets {
+    width: rem(130px);
+    height: rem(130px);
+  }
 }
 
 .reviews__content {
   flex: 1;
-  margin-left: 40px;
+  margin-left: rem(40px);
+
+  @include tablets {
+    margin-left: rem(0px);
+  }
+}
+
+.reviews__list {
+  position: relative;
+  min-height: rem(296px);
+
+  @include tablets {
+    min-height: rem(325px);
+  }
+
+  @include phones {
+    min-height: rem(365px);
+  }
+}
+
+.reviews__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition: .3s;
+  opacity: 0;
+}
+
+.reviews__item_active {
+  position: static;
+  opacity: 1;
+  pointer-events: unset;
 }
 
 .reviews__title {
-  @include text('Play',sans-serif,bold,48px,52px,$tc_b1);
+  @include text('Play',sans-serif,bold,rem(48px),rem(52px),$tc_b1);
   text-transform: uppercase;
-  margin: 0px;
-  margin-bottom: 32px;
+  margin: rem(0px);
+  margin-bottom: rem(32px);
+
+  @include tablets {
+    margin-bottom: rem(60px);
+  }
+
+  @include phones {
+    @include text('Play',sans-serif,bold,rem(32px),rem(36px),$tc_b1);
+  }
 }
 
 .reviews__subtitle {
-  @include text('Play',sans-serif,bold,24px,28px,$tc_b1);
-  margin-top: 30px;
-  margin-bottom: 27px;
+  @include text('Play',sans-serif,bold,rem(24px),rem(28px),$tc_b1);
+  margin-top: rem(30px);
+  margin-bottom: rem(27px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
   
 }
 
 .reviews__text {
-  @include text('Play',sans-serif,normal,16px,19px,$tc_g);
-  margin-bottom: 38px;
+  @include text('Play',sans-serif,normal,rem(16px),rem(19px),$tc_g);
+  margin-bottom: rem(38px);
+
+  @include tablets {
+    margin-bottom: rem(20px);
+  }
 }
 
 .reviews__author {
-  @include text('Play',sans-serif,bold,18px,21px,$tc_b1);
+  @include text('Play',sans-serif,bold,rem(18px),rem(21px),$tc_b1);
 }
 
 .reviews__switcher {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: rem(15px);
+
+  @include tablets {
+    margin-top: rem(32px);
+  }
+
+  @include phones {
+    margin-top: rem(44px);
+  }
 }
 
 .reviews__switcher_item {
-  margin-right: 3px;
+  margin-right: rem(3px);
 }

@@ -1,0 +1,47 @@
+.button_transparent {
+  margin-left: rem(10px);
+  background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(16px);
+  line-height: rem(18px);
+  color: #fff;
+  text-transform: none;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
+}
+.button_transparent:hover {
+  margin-left: rem(10px);
+  background-color: transparent;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
+  text-transform: none;
+  color: #E01F3D;
+}
+.button_transparent:active {
+  box-shadow: none;
+  outline: none;
+}
+
+.hamburger {
+  width: 24px;
+  height: 20px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: inline-flex;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background-color: #292929;
+  height: 4px;
+  border-radius: 10px;
+}
