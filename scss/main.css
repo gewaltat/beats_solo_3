@@ -343,6 +343,11 @@ template {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(21px);
+  line-height: rem(41px);
+  color: #fff;
   width: rem(160px);
   height: rem(54px);
   padding: rem(21px), rem(41px);
@@ -367,6 +372,10 @@ template {
 .button_transparent {
   margin-left: rem(10px);
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(16px);
+  line-height: rem(18px);
   color: #fff;
   text-transform: none;
   width: rem(70px);
@@ -444,6 +453,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(21px);
+  line-height: rem(41px);
+  color: #fff;
   width: rem(160px);
   height: rem(54px);
   padding: rem(21px), rem(41px);
@@ -468,6 +482,10 @@ li {
 .button_transparent {
   margin-left: rem(10px);
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(16px);
+  line-height: rem(18px);
   color: #fff;
   text-transform: none;
   width: rem(70px);
@@ -492,6 +510,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -516,6 +539,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -586,6 +613,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -610,6 +642,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -726,6 +762,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -750,6 +791,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -904,6 +949,19 @@ li {
   margin-left: 3.75rem;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .switcher__content {
+    align-items: center;
+    margin-left: 0;
+  }
+  .switcher__content:before {
+    content: "";
+    width: 19.125rem;
+    height: 19.125rem;
+    margin-bottom: 2.9375rem;
+    background: url(../svg/headphones_1.svg) center center/contain no-repeat;
+  }
+}
 
 .switcher__fns {
   padding: 3px 13px 3px;
@@ -928,6 +986,11 @@ li {
 .switcher__img {
   width: 28.25rem;
   height: 28.25rem;
+}
+@media screen and (max-width: 768px) {
+  .switcher__img {
+    display: none;
+  }
 }
 
 .switcher__gear {
@@ -961,6 +1024,11 @@ li {
   left: 5.6875rem;
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  .switcher__icon {
+    display: none;
+  }
+}
 
 .switcher__title {
   font-family: "Play", sans-serif;
@@ -972,6 +1040,17 @@ li {
   margin: 0rem;
   margin-bottom: 0.625rem;
 }
+@media screen and (max-width: 768px) {
+  .switcher__title {
+    text-align: center;
+    margin-bottom: 0;
+    font-family: "Play", sans-serif;
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    color: #292929;
+  }
+}
 
 .switcher__text {
   font-family: "Play", sans-serif;
@@ -981,6 +1060,12 @@ li {
   color: #666666;
   margin-bottom: 1.6875rem;
   padding-right: 20%;
+}
+@media screen and (max-width: 768px) {
+  .switcher__text {
+    padding: 0 10%;
+    text-align: center;
+  }
 }
 
 .switcher__options {
@@ -1007,6 +1092,7 @@ li {
 }
 
 .price {
+  text-align: start;
   margin-right: 1.25rem;
   font-family: "Play", sans-serif;
   font-weight: normal;
@@ -1014,11 +1100,21 @@ li {
   line-height: 3.75rem;
   color: #151515;
 }
+@media screen and (max-width: 768px) {
+  .price {
+    margin-right: 2.5rem;
+  }
+}
 
 .button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -1043,6 +1139,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -1097,6 +1197,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -1121,6 +1226,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -1183,6 +1292,11 @@ li {
   cursor: pointer;
   z-index: 10;
 }
+@media screen and (max-width: 768px) {
+  .section__sw:before {
+    top: 27%;
+  }
+}
 
 .section__sw:after {
   content: url(../svg/arrow_right.svg);
@@ -1191,11 +1305,21 @@ li {
   right: 5%;
   cursor: pointer;
 }
+@media screen and (max-width: 768px) {
+  .section__sw:after {
+    top: 27%;
+  }
+}
 
 .button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -1220,6 +1344,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -1290,6 +1418,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -1314,6 +1447,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -1402,6 +1539,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -1426,6 +1568,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -1485,8 +1631,6 @@ li {
   width: 15.8125rem;
   height: 16.5rem;
   object-fit: cover;
-  min-width: 100%;
-  min-height: 100%;
 }
 @media screen and (max-width: 768px) {
   .reviews__avatar_img {
@@ -1507,7 +1651,17 @@ li {
 
 .reviews__list {
   position: relative;
-  min-height: 16.75rem;
+  min-height: 18.5rem;
+}
+@media screen and (max-width: 768px) {
+  .reviews__list {
+    min-height: 20.3125rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .reviews__list {
+    min-height: 22.8125rem;
+  }
 }
 
 .reviews__item {
@@ -1612,6 +1766,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -1636,6 +1795,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -1659,13 +1822,17 @@ li {
 .interactive_ava {
   width: 4.625rem;
   height: 4.625rem;
-  border: 0.25rem solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 0 0 4px transparent;
+  margin-right: 10px;
+}
+.interactive_ava:last-child {
+  margin-right: 0;
 }
 .interactive_ava__active {
-  border-color: #E01F3D;
+  box-shadow: 0 0 0 4px #E01F3D;
 }
 
 .interactive_ava__link {
@@ -1685,10 +1852,167 @@ li {
   object-position: center;
 }
 
+.team__title {
+  margin: 0 0 3.3125rem 0;
+}
+@media screen and (max-width: 480px) {
+  .team__title {
+    margin: 0 0 2.25rem 0;
+    font-family: "Play", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    color: #000;
+  }
+}
+
+.team__content {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 768px) {
+  .team__content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.team__item {
+  position: relative;
+  width: 13.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1%;
+}
+@media screen and (max-width: 768px) {
+  .team__item {
+    margin-right: 0;
+  }
+}
+.team__item:last-child {
+  margin-right: 0;
+}
+.team__item_folded {
+  margin-right: 1%;
+}
+@media screen and (max-width: 768px) {
+  .team__item_folded .team__img {
+    margin-right: 0;
+    height: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__item_folded .team__subtitle {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__item_folded .team__text {
+    height: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__item_folded .team__button {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team__item_folded .team__button:after {
+    border-top-width: 9px;
+    border-bottom-width: 0px;
+    border-bottom-color: transparent;
+    border-top-color: #E01F3D;
+  }
+}
+
+.team__button {
+  display: flex;
+  align-items: baseline;
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
+  color: #000;
+  margin-bottom: 0.6875rem;
+}
+.team__button:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 4.5px solid transparent;
+  border-top-width: 0px;
+  border-bottom-width: 9px;
+  border-bottom-color: #E01F3D;
+  margin-left: 4px;
+}
+
+.team__img {
+  width: 13.75rem;
+  height: 18.125rem;
+  margin-bottom: 1.5625rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .team__img {
+    order: 1;
+  }
+}
+
+.team__icon {
+  width: 100%;
+  height: 100%;
+}
+
+.team__subtitle {
+  text-align: center;
+  font-family: "Play", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+  color: #000;
+  margin: 0 0 4px 0;
+}
+@media screen and (max-width: 768px) {
+  .team__subtitle {
+    order: 2;
+  }
+}
+
+.team__text {
+  text-align: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #666666;
+}
+@media screen and (max-width: 768px) {
+  .team__text {
+    order: 3;
+  }
+}
+.team__text p {
+  margin: 0;
+}
+
 .button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -1713,6 +2037,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -1890,6 +2218,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -1914,6 +2247,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -1992,6 +2329,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -2016,6 +2358,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -2109,6 +2455,11 @@ li {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
   width: 10rem;
   height: 3.375rem;
   padding: 1.3125rem, 2.5625rem;
@@ -2133,6 +2484,10 @@ li {
 .button_transparent {
   margin-left: 0.625rem;
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
   color: #fff;
   text-transform: none;
   width: 4.375rem;
@@ -2198,6 +2553,63 @@ li {
   transform: translate(-50%, -50%);
 }
 
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1.3125rem;
+  line-height: 2.5625rem;
+  color: #fff;
+  width: 10rem;
+  height: 3.375rem;
+  padding: 1.3125rem, 2.5625rem;
+  border: 0rem;
+  border-radius: 2.1875rem;
+  background-color: #E01F3D;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #CA1B36;
+  color: #fff;
+}
+.button:active {
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(218, 1, 0, 0.3);
+}
+
+.button_transparent {
+  margin-left: 0.625rem;
+  background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  color: #fff;
+  text-transform: none;
+  width: 4.375rem;
+  height: 1.1875rem;
+  padding: 1.3125rem, 2.5625rem;
+}
+.button_transparent:hover {
+  margin-left: 0.625rem;
+  background-color: transparent;
+  width: 4.375rem;
+  height: 1.1875rem;
+  padding: 1.3125rem, 2.5625rem;
+  text-transform: none;
+  color: #E01F3D;
+}
+.button_transparent:active {
+  box-shadow: none;
+  outline: none;
+}
+
 .fullscreen__menu {
   position: fixed;
   display: flex;
@@ -2212,12 +2624,17 @@ li {
   justify-content: center;
   align-items: center;
   visibility: hidden;
+  min-height: 31.25rem;
+}
+
+.fullscreen__menu_active {
+  visibility: visible;
 }
 
 .fullscreen__menu__close {
   position: absolute;
-  right: 100px;
-  top: 100px;
+  right: 2.625rem;
+  top: 2.625rem;
   color: #fff;
   text-decoration: none;
 }
@@ -2232,8 +2649,4 @@ li {
   font-size: 2.25rem;
   line-height: 4.5rem;
   color: #fff;
-}
-
-.fs__item {
-  padding: 20px 100px;
 }

@@ -2,6 +2,11 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(21px);
+  line-height: rem(41px);
+  color: #fff;
   width: rem(160px);
   height: rem(54px);
   padding: rem(21px), rem(41px);
@@ -26,6 +31,10 @@
 .button_transparent {
   margin-left: rem(10px);
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(16px);
+  line-height: rem(18px);
   color: #fff;
   text-transform: none;
   width: rem(70px);

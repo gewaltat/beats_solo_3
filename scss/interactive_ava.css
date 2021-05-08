@@ -1,6 +1,10 @@
 .button_transparent {
   margin-left: rem(10px);
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(16px);
+  line-height: rem(18px);
   color: #fff;
   text-transform: none;
   width: rem(70px);
@@ -24,13 +28,17 @@
 .interactive_ava {
   width: rem(74px);
   height: rem(74px);
-  border: rem(4px) solid transparent;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  box-shadow: 0 0 0 4px transparent;
+  margin-right: 10px;
+}
+.interactive_ava:last-child {
+  margin-right: 0;
 }
 .interactive_ava__active {
-  border-color: #E01F3D;
+  box-shadow: 0 0 0 4px #E01F3D;
 }
 
 .interactive_ava__link {

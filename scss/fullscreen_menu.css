@@ -1,5 +1,33 @@
+.button_transparent {
+  margin-left: rem(10px);
+  background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(16px);
+  line-height: rem(18px);
+  color: #fff;
+  text-transform: none;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
+}
+.button_transparent:hover {
+  margin-left: rem(10px);
+  background-color: transparent;
+  width: rem(70px);
+  height: rem(19px);
+  padding: rem(21px), rem(41px);
+  text-transform: none;
+  color: #E01F3D;
+}
+.button_transparent:active {
+  box-shadow: none;
+  outline: none;
+}
+
 .fullscreen__menu {
   position: fixed;
+  display: flex;
   top: 0;
   right: 0;
   bottom: 0;
@@ -10,4 +38,30 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  visibility: hidden;
+  min-height: rem(500px);
+}
+
+.fullscreen__menu_active {
+  visibility: visible;
+}
+
+.fullscreen__menu__close {
+  position: absolute;
+  right: rem(42px);
+  top: rem(42px);
+  color: #fff;
+  text-decoration: none;
+}
+
+.fs__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(36px);
+  line-height: rem(72px);
+  color: #fff;
 }

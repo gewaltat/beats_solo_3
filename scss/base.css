@@ -2,6 +2,10 @@
 .button_transparent {
   margin-left: rem(10px);
   background-color: transparent;
+  font-family: "Play", sans-serif;
+  font-weight: normal;
+  font-size: rem(16px);
+  line-height: rem(18px);
   color: #fff;
   text-transform: none;
   width: rem(70px);

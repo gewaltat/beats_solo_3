@@ -1,3 +1,8 @@
+@import "variables.scss";
+@import "mixin.scss";
+@import "templates.scss";
+
+
 .fullscreen__menu {
   position: fixed;
   display: flex;
@@ -12,12 +17,17 @@
   justify-content: center;
   align-items: center;
   visibility:hidden;
+  min-height: rem(500px);
+}
+
+.fullscreen__menu_active{
+  visibility:visible;
 }
 
 .fullscreen__menu__close {
   position: absolute;
-  right: 100px;
-  top: 100px;
+  right: rem(42px);
+  top: rem(42px);
   color: #fff;
   text-decoration: none;
 }
@@ -28,8 +38,4 @@
   justify-content: center;
   align-items: center;
   @include text('Play',sans-serif,normal,rem(36px),rem(72px),#fff);
-}
-
-.fs__item {
-padding: 20px 100px;
 }
