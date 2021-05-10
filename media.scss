@@ -1,9 +1,0 @@
-@import "variables.scss";
-@import "mixin.scss";
-@import "templates.scss";
-
-
-@function rem($px) {
-  @return $px / $basefs + 0rem;
-}
-
